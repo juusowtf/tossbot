@@ -64,10 +64,18 @@ You can find more examples in the [`examples/`](/examples) folder.
 - On our servers, your code will be run on python 3.7. (currently, python 3.7.3)
 - You can modify the `run_locally.py` starter script to your liking as you might want to increase the difficulty of the game-AI at some point
   * Map can be selected by using its file name in lowercase, for instance: `run_game(maps.get("(2)dreamcatcherle")`
-- If you need to use any Python dependencies, just paste the libraries into your team repo
 - Push code to Gitlab early and push it often, to see your progress and make sure your bot works correctly on our servers.
 - Watch how your bot fares on the Ranking on the [Artificial Overmind Challenge site](https://artificial-overmind.reaktor.com/)  
 - Some common Python packages are available, at least: Keras tensorflow scipy numpy scikit-learn pandas more-itertools python-utils
+
+## Technical specifications
+
+- Your git repo for the bot must not exceed one gigabyte in size
+- We're running on Python 3.7 
+- Following libraries are included: keras, tensorflow, scipy, numpy, scikit-learn, pandas, more-itertools, python-utils
+- Installing extra libraries using `pip` is not possible at this moment. If you need to use any Python dependencies, just paste the libraries into your team repo
+- IO is not allowed. Don't use filesystem or networking.
+- Starting threads or processes is not allowed. 
 
 ## Rules
 
@@ -84,12 +92,9 @@ You can find more examples in the [`examples/`](/examples) folder.
   * If score-based evaluation is implemented during the competition, it will be used to resolve draws
     + In the finals, draw situations will be resolved by who has the higher army value at the end of the game if scores are not available
   * Pausing the game is neither allowed or possible
-  * The map pool is static and decided by the organizers
+  * The map pool is decided by the organizers
     + All maps will be selected from the official ladder map pool starting with the first season of 2017, available [here](https://github.com/Blizzard/s2client-proto#map-packs)
 - The organizers reserve the right to change the rules and technical limitations during the competition
-- Your git repo for the bot must not exceed one gigabyte in size
-- Technical limitations:
-  * IO is not allowed. Don't use filesystem or networking.
-  * Starting threads or processes is not allowed. 
+- Teams must adhere to the limitations listed in technical specifications above
 - Please contact us (e.g. in Discord) if you have any questions
 
