@@ -16,9 +16,6 @@ class MyBot(sc2.BotAI):
     # for asynchronous programming should be followed.
     async def on_step(self, iteration):
         if iteration == 0:
-            await self.chat_send(f"Name: {self.NAME}")
-            # FIXME: uncomment to have simplest winning strategy!
-            # actions = []
-            # for worker in self.workers:
-            #     actions.append(worker.attack(self.enemy_start_locations[0]))
-            # await self.do_actions(actions)
+            await self.chat_send("Tossbot activated.")
+            for worker in self.workers:
+                await self.do(worker.attack(self.enemy_start_locations[0]))
