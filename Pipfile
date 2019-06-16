@@ -9,7 +9,7 @@ autopep8 = "*"
 pipenv = "*"
 
 [packages]
-sc2 = {editable = true,git = "https://github.com/Dentosal/python-sc2.git",ref = "develop"}
+sc2 = {editable = true,git = "https://github.com/jzmch/python-sc2.git",ref = "fix/4.9.0-support"}
 
 [requires]
 python_version = "3.7"

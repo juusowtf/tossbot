@@ -1,9 +1,9 @@
 import json
 
 from sc2 import run_game, maps, Race, Difficulty
-from sc2.player import Bot, Computer
+from sc2.player import Bot, Computer, Human
 
-from bot import MyBot
+from bot import TossBot
 
 def main():
     with open("botinfo.json") as f:
@@ -12,9 +12,9 @@ def main():
     race = Race[info["race"]]
 
     run_game(maps.get("Automaton LE"), [
-        Bot(race, MyBot()),
+        Bot(race, TossBot()),
         Computer(Race.Random, Difficulty.Medium)
-    ], realtime=False, step_time_limit=2.0, game_time_limit=(60*20), save_replay_as="test.SC2Replay")
+    ], realtime=True)
 
 if __name__ == '__main__':
     main()

@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "b6c77d733978af4afb7d0cee51a5fe349203402e0160a57d9297096c749c6428"
+            "sha256": "20ee79799d43cb5349fff83cf1478acff8814b746c7bcb144840616874cd06d7"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -183,8 +183,8 @@
         },
         "sc2": {
             "editable": true,
-            "git": "https://github.com/Dentosal/python-sc2.git",
-            "ref": "307e5769bead244bc71e9d261310a4a7dc0bc3a5"
+            "git": "https://github.com/jzmch/python-sc2.git",
+            "ref": "875afef257af9eb14ddefd028f88d1fa4045be1b"
         },
         "six": {
             "hashes": [
