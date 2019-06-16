@@ -4,9 +4,12 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+pylint = "*"
+autopep8 = "*"
+pipenv = "*"
 
 [packages]
-sc2 = "*"
+sc2 = {editable = true,git = "https://github.com/Dentosal/python-sc2.git",ref = "develop"}
 
 [requires]
 python_version = "3.7"
